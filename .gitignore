@@ -1,31 +1,29 @@
-# Dados locais dos datasets
+# Dados locais das etapas
 **/data/raw/*
 **/data/input/*
 **/data/output/*
 
-# Preserva a estrutura de pastas no repositorio
-!**/data/raw/.gitkeep
-!**/data/input/.gitkeep
-!**/data/output/.gitkeep
+# Excecao para manter qualquer pasta estruturada
+!**/.gitkeep
+
+# Excecao para os arquivos de status dos datasets
+!**/data/input/*_Status.csv
 
 # Caches e arquivos temporarios do Jupyter
 .ipynb_checkpoints/
-*/.ipynb_checkpoints/*
 
-# Ambientes virtuais e configuracoes locais
+# Ambientes virtuais
 .env
-venv/
 .venv/
+venv/
 env/
 
 # Caches do Python
 __pycache__/
 *.py[cod]
 
-# Editores de codigo
+# Editores e sistema operacional
 .vscode/
 .idea/
-
-# Arquivos do sistema operacional
 .DS_Store
 Thumbs.db
